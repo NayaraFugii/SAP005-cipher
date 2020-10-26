@@ -2,6 +2,26 @@ body{
     background-color: #CDB7B5;
 }
 
+#header{
+    text-align: center;
+    
+}
+h1{
+    font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+    font-size: 90px;
+    margin-bottom: 0;
+    text-shadow: black 0.1em 0.1em 0.1em;
+    color:white;
+
+}
+
+h2{
+    font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom:3%;
+    color: whitesmoke
+}
 
 #root{
     display: flex;  
