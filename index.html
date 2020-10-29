@@ -15,17 +15,18 @@
         <div id ="principal">
           <fieldset id="box">  
             <label for="criptografar">Qual a mensagem que deseja enviar?</label>
-            <textarea id="text" placeholder="Escreva aqui sua mensagem" ></textarea>
-            <input placeholder="Crie uma palavra chave segura">
-            <button id="button">Cifrar</button>       
+            <textarea id="text" type= "text" placeholder="Escreva aqui sua mensagem" required></textarea>
+            <input type= "text" placeholder="Numero de deslocamento" required>
+            <input type ='password' placeholder="Crie uma palavra chave segura" required>
+            <button id="button" onclick="saveInformation()">Cifrar</button>       
           </fieldset>
         </div>
         <div id ="principal">
           <fieldset id="box">  
             <label for="decifrar">Insira a palavra chave para decrifrar.</label>
-             <input placeholder="Insira a palavra chave">
+             <input type= "text" placeholder="Insira a palavra chave" >
             <button id="button">Decifrar</button>  
-            <textarea id="text" placeholder="Decifre aqui sua mensagem" ></textarea> 
+            <textarea  type= "text" id="text" placeholder="Decifre aqui sua mensagem" ></textarea> 
           </fieldset>
         </div>        
       </form>          
