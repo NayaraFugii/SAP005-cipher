@@ -1,11 +1,13 @@
 
 const cipher = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
-let string = 'LILLA L';
-let offset = parseInt('1');
-let text = '';
-let space = ' ';
 
-function cifra(){
+const space = ' ';
+
+
+function cifra(area, off){
+    let string = area
+    let offset = parseInt(off)
+    let text = ''
 
     if(offset == 0){
         alert('Não é possivel cifrar a mensagem, pois o número de casas é igual a zero.');
@@ -20,15 +22,15 @@ function cifra(){
         for(let i = 0; i < cipher.length; i++){   
     
             if(cipher[i] == string[f]){
-                let code = (string.charCodeAt(f) - 65 + offset) % 26
-                text = text + cipher[code];
+                let formula = (string.charCodeAt(f) - 65 + offset) % 26
+                text = text + cipher[formula];
+                
             }
                        
         }
-    }
-    
+    } 
+    return text;
 }
-    cifra();
 
-    console.log(text);
  
+export default cifra;
