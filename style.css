@@ -76,9 +76,13 @@ input{
 #text{
     padding: 30%;
     margin-bottom: 5%;  
-    
-
 }
+    
+#answer{
+    padding: 30%;
+    margin-bottom: 5%;  
+}
+
 
 button{
     width: 40%;

@@ -12,23 +12,23 @@
     </div>
     <div id="root">
       <form id = "container">
-        <div id ="principal">
-          <fieldset id="box">  
-            <label for="criptografar">Qual a mensagem que deseja enviar?</label>
-            <textarea id="text" type= "text" placeholder="Escreva aqui sua mensagem" required></textarea>
-            <input id = "offset" type= "text" placeholder="Numero de deslocamento" required>
-            <input type ='password' placeholder="Crie uma palavra chave segura">
-            <button id="buttonCode">Cifrar</button>       
-          </fieldset>
-        </div>
-        <div id ="principal">
-          <fieldset id="box">  
-            <label for="decifrar">Insira a palavra chave para decrifrar.</label>
-             <input type= "text" placeholder="Insira a palavra chave" >
-            <button id="buttonDecode">Decifrar</button>  
-            <textarea  type= "text" id="text" placeholder="Decifre aqui sua mensagem" ></textarea> 
-          </fieldset>
-        </div>        
+      <div id ="principal">
+        <fieldset id="box">  
+          <label for="criptografar">Qual a mensagem que deseja enviar?</label>
+          <textarea id="answer" type= "text" placeholder="Escreva aqui sua mensagem" required></textarea>
+          <input id = "offset" type= "text" placeholder="Numero de deslocamento" required>
+          <input id = "password" type = "password" placeholder="Crie uma palavra chave segura">
+          <button id="buttonCode">Cifrar</button>       
+        </fieldset>
+      </div>
+      <div id ="principal">
+        <fieldset id="box">  
+          <label for="decifrar">Insira a palavra chave para decrifrar.</label>
+            <input type= "password" placeholder="Insira a palavra chave" >
+          <button id="buttonDecode">Decifrar</button>  
+          <textarea id="text" type= "text"  placeholder="Decifre aqui sua mensagem" ></textarea> 
+        </fieldset>
+      </div>        
       </form>          
     </div>
     <script src="index.js" type="module"></script>
