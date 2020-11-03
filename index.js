@@ -10,10 +10,13 @@ const frase = document.getElementById('text')
 code.addEventListener('click', (event) => { 
   event.preventDefault()
     let area = document.getElementById('answer').value 
+    console.log(area)
     let off = document.getElementById('offset').value
+    console.log(off)
     let password = document.getElementById('password').value
     console.log(password);
-    answer.value = cipher.cifra(off,area)  
+    answer.value = cipher.cifra(off,area) 
+    console.log(answer.value) 
 
     
 });

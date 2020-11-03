@@ -3,8 +3,8 @@ const space = ' ';
 
 const cipher = {
      cifra(offset,message){  
-       // let string = message;
-        //let offset = parseInt('2');
+        let string = message.toUpperCase();
+        let off = parseInt(offset);
         let text ='';
         
         if(offset === 0){
@@ -12,18 +12,18 @@ const cipher = {
             return;
         }
     
-        for(let f = 0; f <=message.length; f++){
-            if(message[f] == space){
+        for(let f = 0; f <= string.length; f++){
+            if(string[f] == space){
                 text = text + space
             }
         
             for(let i = 0; i < alfabeto.length; i++){   
-                if(alfabeto[i] == message[f]){
-                    let formula = (message.charCodeAt(f) - 65 + offset) % 26
+                if(alfabeto[i] == string[f]){
+                    let formula = (string.charCodeAt(f) - 65 + off) % 26
                     text = text + alfabeto[formula];
                 }         
             }
-        }
+        }console.log(text)
         return text;
     },
 }
