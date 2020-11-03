@@ -9,12 +9,9 @@ const frase = document.getElementById('text')
 
 code.addEventListener('click', (event) => { 
   event.preventDefault()
-    let area = document.getElementById('answer').value 
-    console.log(area)
-    let off = document.getElementById('offset').value
-    console.log(off)
-    let password = document.getElementById('password').value
-    console.log(password);
+    let area = document.getElementById('answer').value     
+    let off = document.getElementById('offset').value    
+    let password = document.getElementById('password').value    
     answer.value = cipher.cifra(off,area) 
     console.log(answer.value) 
 
@@ -26,10 +23,11 @@ decode.addEventListener('click', (event)=>{
   event.preventDefault()
   let area = document.getElementById('answer').value 
   let password = document.getElementById('password').value
-  const psw = document.getElementById('password').value
+  const psw = document.getElementById('pass').value
   console.log(psw)
-    if (password == psw ){
-      frase.textContent = area.value;
+    if (password === psw ){
+     area = a
+    
       
     }else{
       alert('A senha inserida está incorreta');
