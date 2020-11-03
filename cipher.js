@@ -27,10 +27,34 @@ const cipher = {
         return text;
     },
 }
+ const password = parseInt('123')
+ const psw = parseInt('123')
+ const message = "CAIO"
+ const offset = '2';
+ let off = parseInt(offset);
 
+function decode(){
+    let text = '';
 
+    if(password === psw){
+        for(let f = 0; f <=  message.length; f++){
+            if(message[f] == space){
+                text = text + space
+            }  
+            
+            for(let i = 0; i < alfabeto.length; i++){   
+                if(alfabeto[i] == message[f]){
+                    let formula = (string.fromCharCode(f) - 65 + off) % 26 + 65
+                    text = text + alfabeto[formula];
+                }   
+            } 
+        }            
+    } else {
+        console.log('A senha inserida está incorreta')
+    }  
+    console.log(text);         
+}
+
+ decode();
  
- 
- //cifra();
- 
-export default cipher;
+//export default cipher;
