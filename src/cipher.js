@@ -25,35 +25,47 @@ const cipher = {
             }
         }console.log(text)
         return text;
-    },
+    }
 }
  const password = parseInt('123')
  const psw = parseInt('123')
- const message = "CAIO"
- const offset = '2';
+ let message = "AB CDEFG"
+ let offset = '1';
  let off = parseInt(offset);
 
-function decode(){
-    let text = '';
 
-    if(password === psw){
-        for(let f = 0; f <=  message.length; f++){
-            if(message[f] == space){
+function decode(){
+    let string = message.toUpperCase();
+    let off = parseInt(offset);
+    let text ='';
+    let posicoes = []
+    if(password == psw){
+        for(let f = 0; f < string.length; f++){
+            if(string[f] !== ' '){
+                let condicao = (string.charCodeAt(f) - 65 - off)
+                if(condicao < 0){
+                    posicoes.push((string.charCodeAt(f) - 65 - off) % 26 + 26)
+                }else{
+                    posicoes.push((string.charCodeAt(f) - 65 - off) % 26)
+                }
+            }else{
+                posicoes.push(' ')
+            }
+        }
+    
+        for(let i = 0; i < posicoes.length; i++){
+            if(posicoes[i] !== space){
+                text = text + alfabeto[posicoes[i]]
+            }else{
                 text = text + space
-            }  
-            
-            for(let i = 0; i < alfabeto.length; i++){   
-                if(alfabeto[i] == message[f]){
-                    let formula = (string.fromCharCode(f) - 65 + off) % 26 + 65
-                    text = text + alfabeto[formula];
-                }   
-            } 
-        }            
-    } else {
+            }
+        }
+        return text;
+    }else{
         console.log('A senha inserida está incorreta')
-    }  
-    console.log(text);         
-}
+    }
+}      
+
 
  decode();
  
