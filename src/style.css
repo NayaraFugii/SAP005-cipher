@@ -1,5 +1,16 @@
+* {
+    margin: 0;
+    padding:0;
+}
+
 body{
-    background-color: #CDB7B5;
+    width: 100%;
+    height: 100%;
+    background-image:url('backgroundimg.jpg');
+    background-attachment:fixed;
+    background-size: 100%;
+     margin: 0;
+    padding:0;
 }
 
 #header{
@@ -9,18 +20,21 @@ body{
 h1{
     font-family: 'Brush Script MT', 'Brush Script Std', cursive;
     font-size: 90px;
-    margin-bottom: 0;
+    margin-bottom: 3%;
     text-shadow: black 0.1em 0.1em 0.1em;
     color:white;
+    /*background-color:#FFB6C1;*/
+    padding:1%;
 
 }
 
 h2{
-    font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+    font-family:monospace;
     font-size: 30px;
     margin-top: 0;
-    margin-bottom:3%;
-    color: whitesmoke
+    margin-bottom:5%;
+    text-shadow: black 0.1em 0.1em 0.3em;
+    color: whitesmoke;
 }
 
 #root{
@@ -42,6 +56,13 @@ h2{
     margin-bottom: 25%;
     border-radius: 5px;
     background-color:#FFE4E1;
+    
+}
+#secondPrincipal{
+    margin-bottom: 25%;
+    border-radius: 5px;
+    background-color:#FFE4E1;
+    
 }
 
 #box{
@@ -50,7 +71,17 @@ h2{
     padding: 10%;
     border-radius: 5px;
     margin:0;
+    border:none;
 }
+#secondBox{
+    display: flex;
+    flex-direction: column; 
+    padding: 10%;
+    border-radius: 5px;
+    margin:0; 
+    border:none;
+}
+
 
 label{
     margin-bottom:5%;
