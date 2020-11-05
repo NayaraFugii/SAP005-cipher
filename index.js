@@ -13,24 +13,17 @@ code.addEventListener('click', (event) => {
     let off = document.getElementById('offset').value    
     let password = document.getElementById('password').value    
     answer.value = cipher.cifra(off,area) 
-    console.log(answer.value) 
 
     
 });
 
-
 decode.addEventListener('click', (event)=>{
   event.preventDefault()
+  let text = document.getElementById('text')
+  let off = document.getElementById('offset').value   
   let area = document.getElementById('answer').value 
+  let psw = document.getElementById('pass').value
   let password = document.getElementById('password').value
-  const psw = document.getElementById('pass').value
-  console.log(psw)
-    if (password === psw ){
-     area = a
-    
+  text.value = cipher.decode(off,area,password,psw)  
       
-    }else{
-      alert('A senha inserida está incorreta');
-     }   
-
 });
