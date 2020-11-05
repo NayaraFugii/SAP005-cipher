@@ -23,7 +23,7 @@ const cipher = {
                     text = text + alfabeto[formula];
                 }         
             }
-        }console.log(text)
+        }
         return text;
     },
     decode(offset,message,password,psw){
@@ -54,14 +54,9 @@ const cipher = {
             }
             return text;
         }else{
-            console.log('A senha inserida está incorreta')
+            return alert('A senha inserida está incorreta')
         }
     },      
 }
-//  const password = parseInt('123')
-//  const psw = parseInt('123')
-//  let message = "AB CDEFG"
-//  let offset = '1';
-//  let off = parseInt(offset);
  
 export default cipher;
