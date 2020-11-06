@@ -1,6 +1,6 @@
 ## Cifra de César
 
-<p>Cifra de césar é umas das técnicas de criptografia onde as letras são substituidas pelo número de casas definida pelo usuário. Com essa técnica foi desenvolvido o projeto **Safe Woman**.</p>
+<p>Cifra de césar é umas das técnicas de criptografia onde as letras são substituidas pelo número de casas definida pelo usuário. Com essa técnica foi desenvolvido o projeto <b>Safe Woman</b>.</p>
 
 * _Exemplo: (A letra A deslocada 2 casas a frente retorna criptografada na letra C, a letra B retornaria D e assim sucessivamente)._
 
