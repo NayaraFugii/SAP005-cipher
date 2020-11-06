@@ -9,7 +9,7 @@
 
 ## Definição do desenho
 
-<p>O desenho do projeto foi pensado como duas caixas na interface onde uma o remetente da mensagem a digita, escolhe o número do seu _offset_ (casas de deslocamento) e define uma senha logo após temos o botão _cifrar_ levando em consideração o passo a passo do usuário. Da mesma forma foi pensado no passo a passo do receptor, onde temos o campo da senha e o botão para _decifrar_ a mensagem.</p>
+<p>O desenho do projeto foi pensado como duas caixas na interface onde uma o remetente da mensagem a digita, escolhe o número do seu <i>offset</i> (casas de deslocamento) e define uma senha logo após temos o botão <i>cifrar</i> levando em consideração o passo a passo do usuário. Da mesma forma foi pensado no passo a passo do receptor, onde temos o campo da senha e o botão para <i>decifrar</i> a mensagem.</p>
  
  ![image](src/img/desenho.png)
 
