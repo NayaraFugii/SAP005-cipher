@@ -60,7 +60,8 @@ const cipher = {
             }
             return text;
         }else{
-            return alert('A senha inserida está incorreta')
+            alert('A senha inserida está incorreta')
+            return ""
         }
     },      
 }
