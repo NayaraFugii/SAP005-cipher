@@ -10,7 +10,7 @@ code.addEventListener('click', (event) => {
   event.preventDefault()
     let area = document.getElementById('answer').value     
     let off = document.getElementById('offset').value 
-    answer.value = cipher.cifra(off,area) 
+    answer.value = cipher.encode(off,area) 
 
     
 });

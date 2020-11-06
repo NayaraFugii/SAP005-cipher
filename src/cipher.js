@@ -2,7 +2,7 @@ const alfabeto = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P
 const space = ' ';
 
 const cipher = {
-     cifra(offset,message){  
+     encode(offset,message){  
         let string = message.toUpperCase();
         let off = parseInt(offset);
         let text ='';
@@ -28,28 +28,34 @@ const cipher = {
     },
     decode(offset,message,password,psw){
         let string = message.toUpperCase();
-        let off = parseInt(offset);
+        let off
+        if(offset > 26) {
+            off = parseInt(offset - 26);
+        }else{
+            off = parseInt(offset);
+        }
         let text ='';
         let posicoes = []
         if(password == psw){
             for(let f = 0; f < string.length; f++){
                 if(string[f] !== ' '){
-                    let condicao = (string.charCodeAt(f) - 65 - off)
+                    let condicao = (string.charCodeAt(f) - 65 - off) % 26
                     if(condicao < 0){
-                        posicoes.push((string.charCodeAt(f) - 65 - off) % 26 + 26)
+                        posicoes.push(condicao + 26)
                     }else{
-                        posicoes.push((string.charCodeAt(f) - 65 - off) % 26)
+                        posicoes.push(condicao)
                     }
                 }else{
                     posicoes.push(' ')
                 }
             }
-        
+            
             for(let i = 0; i < posicoes.length; i++){
                 if(posicoes[i] !== space){
                     text = text + alfabeto[posicoes[i]]
                 }else{
                     text = text + space
+                
                 }
             }
             return text;
